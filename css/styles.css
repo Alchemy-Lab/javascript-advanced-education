@@ -1,20 +1,22 @@
 * {
+	font-family: arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
+	box-sizing: inherit;
 }
 
-section {
+section.book-search {
 	display: flex;
 	justify-content: center;
-	margin-top: 10rem;
+	margin-top: 3rem;
 }
 
 .container {
 	display: flex;
 	width: 50%;
 	min-width: 500px;
-	max-width: 770px;
+	/* max-width: 770px; */
 	padding: 35px;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -39,14 +41,27 @@ section {
 	box-shadow: 1px 1px 8px 1px #dcdcdc;
 	outline: none;
 }
-.QCzoEc {
+.search-tool {
 	margin-top: 3px;
 	color: #9aa0a6;
-}
-.z1asCe {
 	display: inline-block;
 	fill: currentColor;
 }
+
+.cancel-btn {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.error {
+	min-width: 500px;
+	max-width: 770px;
+	border-bottom: 1px solid red;
+}
+
 .searchbar {
 	height: 45px;
 	width: 100%;
@@ -54,12 +69,6 @@ section {
 	border: none;
 	font-size: 16px;
 	outline: none;
-}
-.voice {
-	height: 20px;
-	position: relative;
-	top: 5px;
-	left: 10px;
 }
 
 button {
@@ -81,4 +90,52 @@ button:hover {
 button:focus {
 	border: 1px solid #4885ed;
 	padding: 9px 19px;
+}
+
+section.book-list-section {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.book-list-section > .container {
+	align-items: flex-start;
+	text-align: left;
+	padding: 0;
+}
+
+.book-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.book-title {
+	color: rgb(26, 13, 171);
+	cursor: auto;
+	display: inline-block;
+	font-family: arial, sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	height: 26px;
+	line-height: 26px;
+	margin-block-end: 3px;
+	margin-block-start: 18px;
+	margin-bottom: 3px;
+	margin-top: 18px;
+	padding-top: 5px;
+	text-align: left;
+	text-decoration: underline;
+	text-decoration-line: underline;
+}
+
+.book-auth {
+	color: rgb(77, 81, 86);
+	display: inline;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	height: auto;
+	line-height: 1.58;
+	text-align: left;
+	width: auto;
 }
