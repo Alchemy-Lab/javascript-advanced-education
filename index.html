@@ -43,7 +43,12 @@
 							></path>
 						</svg>
 					</span>
-					<input class="searchbar" type="text" title="Search" />
+					<input
+						class="searchbar"
+						type="text"
+						title="Search"
+						placeholder="Book category: fantasy, fiction..."
+					/>
 					<span
 						class="search-tool hide cancel-btn"
 						style="height: 20px; line-height: 20px; width: 20px"
@@ -66,11 +71,40 @@
 				</div>
 			</div>
 		</section>
+		<div class="error-box"></div>
 		<section class="book-list-section">
 			<div class="container books">
-				<div class="book-list"></div>
+				<div class="book-list">
+					<p class="disclaimer">
+						Open Library is an online project intended to create "one web page
+						for every book ever published". Created by Aaron Swartz,Brewster
+						Kahle, Alexis Rossi, Anand Chitipothu, and Rebecca Malamud, Open
+						Library is a project of the Internet Archive, a nonprofit
+						organization. It has been funded in part by grants from the
+						California State Library and the Kahle/Austin Foundation. Open
+						Library provides online digital copies in multiple formats, created
+						from images of many public domain, out-of-print, and in-print books.
+					</p>
+				</div>
 			</div>
 		</section>
+
+		<!-- Modal -->
+		<section class="modal hidden">
+			<div class="flex">
+				<div class="modal-book-cover-box">
+					<img class="modal-book-cover" src="./images/Book.gif" alt="cover" />
+				</div>
+
+				<button class="btn-close">x</button>
+			</div>
+			<div>
+				<h3 class="modal-book-title"></h3>
+				<p class="modal-book-desc"></p>
+			</div>
+		</section>
+		<div class="overlay hidden"></div>
+
 		<script src="./js/script.js"></script>
 	</body>
 </html>
