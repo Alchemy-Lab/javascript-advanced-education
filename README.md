@@ -32,7 +32,7 @@ Just download all files and folder and run locally in your favorite browser open
 
 ## Take a look and try it
 
-You can try the counter following this link: [JavaScript Counter](https://alchemy-lab.github.io/javascript-counter/)
+You can try the counter following this link: [Bookle](https://alchemy-lab.github.io/bookle/)
 
 ## Contact Me
 
