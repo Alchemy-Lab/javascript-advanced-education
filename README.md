@@ -15,6 +15,7 @@ The Bookle website provides the following features:
 - A "Bookle Search" button to start the search and retrieve a list of related books
 - An "I'm feeling lucky" button to directly access to a random chosen books from the list of the related books
 - A validation system that checks the search terms and provide alerts
+- A modal window to show the book details and with an async book cover image loader
 
 ## Languages
 
@@ -32,7 +33,7 @@ Just download all files and folder and run locally in your favorite browser open
 
 ## Take a look and try it
 
-You can try the Booke search following this link: [Bookle](https://alchemy-lab.github.io/bookle/)
+You can try the Booke search following this link: [Bookle](https://www.alchemylab.it/bookle/)
 
 ## Contact Me
 
