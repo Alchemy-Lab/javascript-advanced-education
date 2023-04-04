@@ -124,7 +124,6 @@ function parseData(data) {
 				})
 				div.appendChild(title)
 				div.appendChild(createDomElement('p', 'book-auth', authors))
-				// div.appendChild(createDomElement('p', 'book-desc', ''))
 				bookList.appendChild(div)
 			})
 		} else {
