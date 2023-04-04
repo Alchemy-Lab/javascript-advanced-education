@@ -5,12 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Bookle</title>
-		<!-- <link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-			crossorigin="anonymous"
-		/> -->
 		<link rel="stylesheet" href="./css/styles.css" />
 		<link
 			rel="apple-touch-icon"
@@ -96,27 +90,20 @@
 		</section>
 
 		<!-- Modal -->
-		<div class="overlay hidden">
-			<section class="modal hidden">
-				<div class="modal-content">
-					<div class="flex">
-						<div class="modal-book-cover-box">
-							<img
-								class="modal-book-cover"
-								src="./images/Book.gif"
-								alt="cover"
-							/>
-						</div>
-
-						<button class="btn-close">x</button>
-					</div>
-					<div>
-						<h3 class="modal-book-title"></h3>
-						<p class="modal-book-desc"></p>
-					</div>
+		<section class="modal hidden">
+			<div class="flex">
+				<div class="modal-book-cover-box">
+					<img class="modal-book-cover" src="./images/Book.gif" alt="cover" />
 				</div>
-			</section>
-		</div>
+
+				<button class="btn-close">x</button>
+			</div>
+			<div>
+				<h3 class="modal-book-title"></h3>
+				<p class="modal-book-desc"></p>
+			</div>
+		</section>
+		<div class="overlay hidden"></div>
 
 		<script src="./js/script.js"></script>
 	</body>

@@ -1,8 +1,6 @@
 * {
 	font-family: arial, sans-serif;
-	/* margin: 0; */
 	padding: 0;
-	/* box-sizing: border-box; */
 	box-sizing: inherit;
 }
 
@@ -10,7 +8,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*justify-content: center; */
 	position: relative;
 	min-height: 100vh;
 	transition: all 0.3s;
@@ -23,9 +20,6 @@ section.book-search {
 }
 
 .container {
-	display: flex;
-	/* width: 50%; */
-	min-width: 500px;
 	max-width: 770px;
 	padding: 35px;
 	flex-direction: column;
@@ -39,7 +33,6 @@ section.book-search {
 	align-items: center;
 	justify-content: space-between;
 	margin: 20px auto;
-	width: 100%;
 	padding: 0 30px;
 	border-radius: 30px;
 	border: 1px solid #dcdcdc;
@@ -128,12 +121,9 @@ section.book-list-section {
 	font-family: arial, sans-serif;
 	font-size: 20px;
 	font-weight: 400;
-	/* height: 26px; */
-	/* line-height: 26px; */
 	margin-block-end: 3px;
 	margin-block-start: 18px;
 	margin-bottom: 3px;
-	/* margin-top: 18px; */
 	padding-top: 5px;
 	text-align: left;
 	text-decoration: underline;
@@ -148,7 +138,6 @@ section.book-list-section {
 	font-size: 14px;
 	font-weight: 400;
 	height: auto;
-	/* line-height: 1.58; */
 	text-align: left;
 	width: auto;
 }
@@ -181,12 +170,13 @@ section.book-list-section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-self: center;
 	gap: 0.4rem;
-	width: 450px;
+	width: 80%;
+	max-width: 450px;
 	padding: 1.3rem;
 	min-height: 250px;
-	position: absolute;
-	top: 20%;
+	max-height: 80%;
 	background-color: white;
 	border: 1px solid #ddd;
 	border-radius: 15px;
@@ -197,6 +187,12 @@ section.book-list-section {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.modal-content {
+	overflow-y: auto;
+	overflow-wrap: break-word;
+	scrollbar-width: 0;
 }
 
 .modal p {
@@ -220,7 +216,10 @@ section.book-list-section {
 }
 
 .overlay {
+	display: flex;
 	position: fixed;
+	justify-content: center;
+	align-items: center;
 	top: 0;
 	bottom: 0;
 	left: 0;
